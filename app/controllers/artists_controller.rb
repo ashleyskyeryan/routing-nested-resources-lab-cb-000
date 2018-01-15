@@ -7,6 +7,10 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
     @song = @artist.songs
     render template: 'songs/index'
+  end
+
+  def song
+    @artist = Artist.find(params[:id])
 
   def show
     @artist = Artist.find(params[:id])
