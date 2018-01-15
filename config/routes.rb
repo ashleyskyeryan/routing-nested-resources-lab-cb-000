@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :artists
+  get 'artists/:id/songs' to: 'artists#songs_index'
   resources :songs
 end
